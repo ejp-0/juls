@@ -248,7 +248,7 @@
             }
 
         /* ===== TEST OVERRIDE BUTTON — delete this block + #overrideBtn element + the JS block at the bottom ===== */
-        #overrideBtn {
+        /*#overrideBtn {
             position: fixed;
             left: 12px;
             bottom: calc(12px + env(safe-area-inset-bottom));
@@ -261,7 +261,7 @@
             font-size: 1.1rem;
             font-weight: 600;
             cursor: pointer;
-        }
+        }*/
         /* ===== END OVERRIDE STYLES ===== */
 
         /* ============ MAIN CARD ============ */
@@ -877,7 +877,7 @@
         </div>
 
         <!-- TEST ONLY: remove this button (and the TEST OVERRIDE css + js blocks) before the real day -->
-        <button id="overrideBtn" type="button">TEST: skip countdown</button>
+        <!--<button id="overrideBtn" type="button">TEST: skip countdown</button>-->
     </section>
 
     <!-- ================= MAIN CARD (kept in a template so it isn't in the page until unlocked) ================= -->
@@ -1537,7 +1537,7 @@
         if (!revealed) ticker = setInterval(tick, 1000);
 
         /* ===== TEST OVERRIDE — delete this line, the button element, and the override CSS to remove ===== */
-        $("overrideBtn").addEventListener("click", reveal);
+        //$("overrideBtn").addEventListener("click", reveal);
         /* ===== END TEST OVERRIDE ===== */
     </script>
 </body>
